@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+.mui-button {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 150px;
+    height: 50px;
+    background: none;
+    border: 2px solid #F85F73;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0);
+    -webkit-transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 15px;
+    border-radius: 3px;
+}
+
+.mui-button:hover {
+    color: #ffffff;
+    box-shadow: 0 0 10px 0.5px rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(0.98);
+    -moz-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    -o-transform: scale(0.98);
+    transform: scale(0.98);
+    background: #ec5a6d;
+    cursor: pointer;
+}
+
+.mui-button:active, .mui-button:focus {
+    outline: none;
+}
+.mui-button p {
+    z-index: 1;
+}
+
+.mui-button-register {
+    background-color: #F85F73;
+    border-radius: 0;
+}
+.mui-button-register * {
+    color: #ffffff;
+}
+.mui-button-login {
+    border-radius: 0;
+    -webkit-transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+}
+.mui-button-login *{
+    color: #222639;
+    -webkit-transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+}
+.mui-button-login:hover * {
+    color: #ffffff;
+}
+.white {
+    color: #ffffff;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    padding: 15px 30px;
+    box-shadow: 1px 1px 20px rgba(1,1,1,0.2);
+    transition: padding .2s;
+    background-color: #ffffff;
+}
+.header .header_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.header.fixed{
+    padding: 0 30px;
+}
+.header .logo h2 a {
+    text-decoration: none;
+}
+.header .menu ul {
+    padding: 0;
+    list-style-type: none;
+}
+.header .menu ul li {
+    display: inline-flex;
+    padding: 0 15px;
+}
+.header .menu ul li a {
+    text-decoration: none;
+    position: relative;
+    font-size: 17px;
+}
+.header .menu ul li a:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #222639;
+    left: 0;
+    bottom: 0;
+    border-radius: 2px;
+    transition: all .2s;
+    margin-bottom: -3px;
+}
+.header .menu ul li a:hover:before {
+    width: 100%;
+}
+.header .menu ul li.active a:before {
+    width: 100%;
+}
